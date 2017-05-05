@@ -8,6 +8,7 @@
 
 #import "PhotoListVC.h"
 
+#import <SnapKit/SnapKit-Swift.h>
 #import "PhotoCell.h"
 
 #import "LXCAAnimation-Swift.h"
@@ -38,7 +39,9 @@
     return 9;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    PhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:<#(nonnull NSString *)#> forIndexPath:<#(nonnull NSIndexPath *)#>]
+    PhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCellReuseIdentifier forIndexPath:indexPath];
+    cell.imgView.image = [UIImage imageNamed:@"cuk.png"];
+    return cell;
 }
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -50,6 +53,9 @@
         _collection = [Component _collectionViewWithItemSize:CGSizeMake(Component.mWidth, Component.mHeight)];
     }
     return _collection;
+}
+- (void)masonry {
+    self.collection.snma
 }
 
 @end
