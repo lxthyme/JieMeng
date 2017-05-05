@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFF97ED6BF2BE271612E7E76 /* Pods_LXCAAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2948D20C28CD7051B6A1BE /* Pods_LXCAAnimation.framework */; };
+		BE51522C1EB196DE008AE248 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE51522B1EB196DE008AE248 /* main.m */; };
+		BE51522F1EB196DE008AE248 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE51522E1EB196DE008AE248 /* AppDelegate.m */; };
+		BE5152321EB196DE008AE248 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5152311EB196DE008AE248 /* ViewController.m */; };
+		BE5152351EB196DE008AE248 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5152331EB196DE008AE248 /* Main.storyboard */; };
+		BE5152371EB196DE008AE248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5152361EB196DE008AE248 /* Assets.xcassets */; };
+		BE51523A1EB196DE008AE248 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5152381EB196DE008AE248 /* LaunchScreen.storyboard */; };
+		BE5152D51EB31C62008AE248 /* CEFoldAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5152CD1EB31C62008AE248 /* CEFoldAnimationController.m */; };
+		BE5152D61EB31C62008AE248 /* CEReversibleAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5152CF1EB31C62008AE248 /* CEReversibleAnimationController.m */; };
+		BE5152D71EB31C62008AE248 /* CEBaseInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5152D21EB31C62008AE248 /* CEBaseInteractionController.m */; };
+		BE5152D81EB31C62008AE248 /* CEHorizontalSwipeInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5152D41EB31C62008AE248 /* CEHorizontalSwipeInteractionController.m */; };
+		BE5152E51EB31C74008AE248 /* DraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5152DC1EB31C74008AE248 /* DraggableView.m */; };
+		BE5152E61EB31C74008AE248 /* PanelBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5152DE1EB31C74008AE248 /* PanelBehavior.m */; };
+		BE5152E71EB31C74008AE248 /* PanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5152E01EB31C74008AE248 /* PanelView.m */; };
+		BE5152E81EB31C74008AE248 /* LXTabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5152E41EB31C74008AE248 /* LXTabbarVC.m */; };
+		BE5152EB1EB31CEE008AE248 /* LXBaseAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5152EA1EB31CEE008AE248 /* LXBaseAnimatedTransition.m */; };
+		BE5152EE1EB31ECA008AE248 /* LXFoldAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5152ED1EB31ECA008AE248 /* LXFoldAnimatedTransition.m */; };
+		BE9E498B1EBB1562009B99F0 /* PhotoListVCC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9E498A1EBB1562009B99F0 /* PhotoListVCC.m */; };
+		BE9E498E1EBB1570009B99F0 /* PhotoDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9E498D1EBB1570009B99F0 /* PhotoDetailVC.m */; };
+		BE9E49921EBB15C0009B99F0 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9E49911EBB15C0009B99F0 /* ListVC.swift */; };
+		BE9E49951EBB15EA009B99F0 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9E49941EBB15EA009B99F0 /* BaseVC.swift */; };
+		BE9E49991EBB2275009B99F0 /* Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9E49981EBB2275009B99F0 /* Colours.m */; };
+		BE9E49A01EBB2E4C009B99F0 /* FactoryComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9E499F1EBB2E4C009B99F0 /* FactoryComponent.swift */; };
+		BE9E49A51EBB35C4009B99F0 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9E49A41EBB35C4009B99F0 /* PhotoCell.m */; };
+		BE9E49A81EBB3919009B99F0 /* PhotoListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9E49A71EBB3919009B99F0 /* PhotoListVC.m */; };
+		BECD1CF31EB8980100917B8C /* LXBasePercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD1CF21EB8980100917B8C /* LXBasePercentDrivenInteractiveTransition.m */; };
+		BECD1CF61EB898DB00917B8C /* LXHorizontalSwipeInteractionTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD1CF51EB898DB00917B8C /* LXHorizontalSwipeInteractionTransition.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		65AE3E349230C18C6761EDED /* Pods-LXCAAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXCAAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LXCAAnimation/Pods-LXCAAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		8E54E9C47F74725D15982B61 /* Pods-LXCAAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXCAAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-LXCAAnimation/Pods-LXCAAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		AF2948D20C28CD7051B6A1BE /* Pods_LXCAAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXCAAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5152271EB196DE008AE248 /* LXCAAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXCAAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE51522B1EB196DE008AE248 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE51522D1EB196DE008AE248 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE51522E1EB196DE008AE248 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE5152301EB196DE008AE248 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BE5152311EB196DE008AE248 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BE5152341EB196DE008AE248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE5152361EB196DE008AE248 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE5152391EB196DE008AE248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE51523B1EB196DE008AE248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE5152CC1EB31C62008AE248 /* CEFoldAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEFoldAnimationController.h; sourceTree = "<group>"; };
+		BE5152CD1EB31C62008AE248 /* CEFoldAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEFoldAnimationController.m; sourceTree = "<group>"; };
+		BE5152CE1EB31C62008AE248 /* CEReversibleAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEReversibleAnimationController.h; sourceTree = "<group>"; };
+		BE5152CF1EB31C62008AE248 /* CEReversibleAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEReversibleAnimationController.m; sourceTree = "<group>"; };
+		BE5152D11EB31C62008AE248 /* CEBaseInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEBaseInteractionController.h; sourceTree = "<group>"; };
+		BE5152D21EB31C62008AE248 /* CEBaseInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEBaseInteractionController.m; sourceTree = "<group>"; };
+		BE5152D31EB31C62008AE248 /* CEHorizontalSwipeInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEHorizontalSwipeInteractionController.h; sourceTree = "<group>"; };
+		BE5152D41EB31C62008AE248 /* CEHorizontalSwipeInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEHorizontalSwipeInteractionController.m; sourceTree = "<group>"; };
+		BE5152DB1EB31C74008AE248 /* DraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableView.h; sourceTree = "<group>"; };
+		BE5152DC1EB31C74008AE248 /* DraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableView.m; sourceTree = "<group>"; };
+		BE5152DD1EB31C74008AE248 /* PanelBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelBehavior.h; sourceTree = "<group>"; };
+		BE5152DE1EB31C74008AE248 /* PanelBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelBehavior.m; sourceTree = "<group>"; };
+		BE5152DF1EB31C74008AE248 /* PanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelView.h; sourceTree = "<group>"; };
+		BE5152E01EB31C74008AE248 /* PanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelView.m; sourceTree = "<group>"; };
+		BE5152E31EB31C74008AE248 /* LXTabbarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTabbarVC.h; sourceTree = "<group>"; };
+		BE5152E41EB31C74008AE248 /* LXTabbarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTabbarVC.m; sourceTree = "<group>"; };
+		BE5152E91EB31CEE008AE248 /* LXBaseAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXBaseAnimatedTransition.h; sourceTree = "<group>"; };
+		BE5152EA1EB31CEE008AE248 /* LXBaseAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXBaseAnimatedTransition.m; sourceTree = "<group>"; };
+		BE5152EC1EB31ECA008AE248 /* LXFoldAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFoldAnimatedTransition.h; sourceTree = "<group>"; };
+		BE5152ED1EB31ECA008AE248 /* LXFoldAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFoldAnimatedTransition.m; sourceTree = "<group>"; };
+		BE9E49891EBB1562009B99F0 /* PhotoListVCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoListVCC.h; sourceTree = "<group>"; };
+		BE9E498A1EBB1562009B99F0 /* PhotoListVCC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoListVCC.m; sourceTree = "<group>"; };
+		BE9E498C1EBB1570009B99F0 /* PhotoDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailVC.h; sourceTree = "<group>"; };
+		BE9E498D1EBB1570009B99F0 /* PhotoDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailVC.m; sourceTree = "<group>"; };
+		BE9E49901EBB15C0009B99F0 /* LXCAAnimation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LXCAAnimation-Bridging-Header.h"; path = "../Ex/List/LXCAAnimation-Bridging-Header.h"; sourceTree = "<group>"; };
+		BE9E49911EBB15C0009B99F0 /* ListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		BE9E49941EBB15EA009B99F0 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		BE9E49971EBB2275009B99F0 /* Colours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colours.h; sourceTree = "<group>"; };
+		BE9E49981EBB2275009B99F0 /* Colours.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colours.m; sourceTree = "<group>"; };
+		BE9E499F1EBB2E4C009B99F0 /* FactoryComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryComponent.swift; sourceTree = "<group>"; };
+		BE9E49A31EBB35C4009B99F0 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		BE9E49A41EBB35C4009B99F0 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		BE9E49A61EBB3919009B99F0 /* PhotoListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoListVC.h; sourceTree = "<group>"; };
+		BE9E49A71EBB3919009B99F0 /* PhotoListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoListVC.m; sourceTree = "<group>"; };
+		BECD1CF11EB8980100917B8C /* LXBasePercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXBasePercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
+		BECD1CF21EB8980100917B8C /* LXBasePercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXBasePercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
+		BECD1CF41EB898DB00917B8C /* LXHorizontalSwipeInteractionTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHorizontalSwipeInteractionTransition.h; sourceTree = "<group>"; };
+		BECD1CF51EB898DB00917B8C /* LXHorizontalSwipeInteractionTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHorizontalSwipeInteractionTransition.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE5152241EB196DE008AE248 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF97ED6BF2BE271612E7E76 /* Pods_LXCAAnimation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85DB289AF4C20D1F2F7570BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF2948D20C28CD7051B6A1BE /* Pods_LXCAAnimation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE51521E1EB196DE008AE248 = {
+			isa = PBXGroup;
+			children = (
+				BE5152CA1EB31C62008AE248 /* 3rd */,
+				BE5152D91EB31C74008AE248 /* Ex */,
+				BE5152291EB196DE008AE248 /* LXCAAnimation */,
+				BE5152281EB196DE008AE248 /* Products */,
+				EF3FCCD0E1E4CF8D9A06C9B5 /* Pods */,
+				85DB289AF4C20D1F2F7570BE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE5152281EB196DE008AE248 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE5152271EB196DE008AE248 /* LXCAAnimation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE5152291EB196DE008AE248 /* LXCAAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				BE51522D1EB196DE008AE248 /* AppDelegate.h */,
+				BE51522E1EB196DE008AE248 /* AppDelegate.m */,
+				BE5152301EB196DE008AE248 /* ViewController.h */,
+				BE5152311EB196DE008AE248 /* ViewController.m */,
+				BE5152331EB196DE008AE248 /* Main.storyboard */,
+				BE9E49901EBB15C0009B99F0 /* LXCAAnimation-Bridging-Header.h */,
+				BE5152361EB196DE008AE248 /* Assets.xcassets */,
+				BE5152381EB196DE008AE248 /* LaunchScreen.storyboard */,
+				BE51523B1EB196DE008AE248 /* Info.plist */,
+				BE51522A1EB196DE008AE248 /* Supporting Files */,
+			);
+			path = LXCAAnimation;
+			sourceTree = "<group>";
+		};
+		BE51522A1EB196DE008AE248 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE51522B1EB196DE008AE248 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE5152CA1EB31C62008AE248 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				BE9E49961EBB2275009B99F0 /* Colours */,
+				BE5152CB1EB31C62008AE248 /* AnimatedTransition */,
+				BE5152D01EB31C62008AE248 /* InteractiveTransition */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		BE5152CB1EB31C62008AE248 /* AnimatedTransition */ = {
+			isa = PBXGroup;
+			children = (
+				BE5152CC1EB31C62008AE248 /* CEFoldAnimationController.h */,
+				BE5152CD1EB31C62008AE248 /* CEFoldAnimationController.m */,
+				BE5152CE1EB31C62008AE248 /* CEReversibleAnimationController.h */,
+				BE5152CF1EB31C62008AE248 /* CEReversibleAnimationController.m */,
+			);
+			path = AnimatedTransition;
+			sourceTree = "<group>";
+		};
+		BE5152D01EB31C62008AE248 /* InteractiveTransition */ = {
+			isa = PBXGroup;
+			children = (
+				BE5152D11EB31C62008AE248 /* CEBaseInteractionController.h */,
+				BE5152D21EB31C62008AE248 /* CEBaseInteractionController.m */,
+				BE5152D31EB31C62008AE248 /* CEHorizontalSwipeInteractionController.h */,
+				BE5152D41EB31C62008AE248 /* CEHorizontalSwipeInteractionController.m */,
+			);
+			path = InteractiveTransition;
+			sourceTree = "<group>";
+		};
+		BE5152D91EB31C74008AE248 /* Ex */ = {
+			isa = PBXGroup;
+			children = (
+				BE9E49931EBB15EA009B99F0 /* Base */,
+				BE9E498F1EBB15AE009B99F0 /* List */,
+				BE9E49871EBB1528009B99F0 /* Photo */,
+				BE5152DA1EB31C74008AE248 /* PanelView */,
+				BE5152E11EB31C74008AE248 /* Tabbar */,
+			);
+			path = Ex;
+			sourceTree = "<group>";
+		};
+		BE5152DA1EB31C74008AE248 /* PanelView */ = {
+			isa = PBXGroup;
+			children = (
+				BE5152DB1EB31C74008AE248 /* DraggableView.h */,
+				BE5152DC1EB31C74008AE248 /* DraggableView.m */,
+				BE5152DD1EB31C74008AE248 /* PanelBehavior.h */,
+				BE5152DE1EB31C74008AE248 /* PanelBehavior.m */,
+				BE5152DF1EB31C74008AE248 /* PanelView.h */,
+				BE5152E01EB31C74008AE248 /* PanelView.m */,
+			);
+			path = PanelView;
+			sourceTree = "<group>";
+		};
+		BE5152E11EB31C74008AE248 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				BE5152E21EB31C74008AE248 /* Animation */,
+				BE5152E31EB31C74008AE248 /* LXTabbarVC.h */,
+				BE5152E41EB31C74008AE248 /* LXTabbarVC.m */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		BE5152E21EB31C74008AE248 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				BE5152E91EB31CEE008AE248 /* LXBaseAnimatedTransition.h */,
+				BE5152EA1EB31CEE008AE248 /* LXBaseAnimatedTransition.m */,
+				BE5152EC1EB31ECA008AE248 /* LXFoldAnimatedTransition.h */,
+				BE5152ED1EB31ECA008AE248 /* LXFoldAnimatedTransition.m */,
+				BECD1CF11EB8980100917B8C /* LXBasePercentDrivenInteractiveTransition.h */,
+				BECD1CF21EB8980100917B8C /* LXBasePercentDrivenInteractiveTransition.m */,
+				BECD1CF41EB898DB00917B8C /* LXHorizontalSwipeInteractionTransition.h */,
+				BECD1CF51EB898DB00917B8C /* LXHorizontalSwipeInteractionTransition.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		BE9E49871EBB1528009B99F0 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				BE9E49881EBB1528009B99F0 /* Animation */,
+				BE9E49A31EBB35C4009B99F0 /* PhotoCell.h */,
+				BE9E49A41EBB35C4009B99F0 /* PhotoCell.m */,
+				BE9E49A61EBB3919009B99F0 /* PhotoListVC.h */,
+				BE9E49A71EBB3919009B99F0 /* PhotoListVC.m */,
+				BE9E49891EBB1562009B99F0 /* PhotoListVCC.h */,
+				BE9E498A1EBB1562009B99F0 /* PhotoListVCC.m */,
+				BE9E498C1EBB1570009B99F0 /* PhotoDetailVC.h */,
+				BE9E498D1EBB1570009B99F0 /* PhotoDetailVC.m */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		BE9E49881EBB1528009B99F0 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		BE9E498F1EBB15AE009B99F0 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				BE9E49911EBB15C0009B99F0 /* ListVC.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		BE9E49931EBB15EA009B99F0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BE9E49941EBB15EA009B99F0 /* BaseVC.swift */,
+				BE9E499F1EBB2E4C009B99F0 /* FactoryComponent.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BE9E49961EBB2275009B99F0 /* Colours */ = {
+			isa = PBXGroup;
+			children = (
+				BE9E49971EBB2275009B99F0 /* Colours.h */,
+				BE9E49981EBB2275009B99F0 /* Colours.m */,
+			);
+			path = Colours;
+			sourceTree = "<group>";
+		};
+		EF3FCCD0E1E4CF8D9A06C9B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65AE3E349230C18C6761EDED /* Pods-LXCAAnimation.debug.xcconfig */,
+				8E54E9C47F74725D15982B61 /* Pods-LXCAAnimation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE5152261EB196DE008AE248 /* LXCAAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE51523E1EB196DE008AE248 /* Build configuration list for PBXNativeTarget "LXCAAnimation" */;
+			buildPhases = (
+				327C4319228A5A1B992370D7 /* [CP] Check Pods Manifest.lock */,
+				BE5152231EB196DE008AE248 /* Sources */,
+				BE5152241EB196DE008AE248 /* Frameworks */,
+				BE5152251EB196DE008AE248 /* Resources */,
+				E33736897FB3C3087D337860 /* [CP] Embed Pods Frameworks */,
+				6CD8FCA34E46D06012A70A12 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LXCAAnimation;
+			productName = LXCAAnimation;
+			productReference = BE5152271EB196DE008AE248 /* LXCAAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE51521F1EB196DE008AE248 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "John LXThyme";
+				TargetAttributes = {
+					BE5152261EB196DE008AE248 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 2P9RYE8ECT;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BE5152221EB196DE008AE248 /* Build configuration list for PBXProject "LXCAAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE51521E1EB196DE008AE248;
+			productRefGroup = BE5152281EB196DE008AE248 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE5152261EB196DE008AE248 /* LXCAAnimation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE5152251EB196DE008AE248 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE51523A1EB196DE008AE248 /* LaunchScreen.storyboard in Resources */,
+				BE5152371EB196DE008AE248 /* Assets.xcassets in Resources */,
+				BE5152351EB196DE008AE248 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		327C4319228A5A1B992370D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6CD8FCA34E46D06012A70A12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LXCAAnimation/Pods-LXCAAnimation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E33736897FB3C3087D337860 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LXCAAnimation/Pods-LXCAAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE5152231EB196DE008AE248 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9E49A51EBB35C4009B99F0 /* PhotoCell.m in Sources */,
+				BE5152E61EB31C74008AE248 /* PanelBehavior.m in Sources */,
+				BE5152321EB196DE008AE248 /* ViewController.m in Sources */,
+				BE51522F1EB196DE008AE248 /* AppDelegate.m in Sources */,
+				BE5152E71EB31C74008AE248 /* PanelView.m in Sources */,
+				BE9E49A01EBB2E4C009B99F0 /* FactoryComponent.swift in Sources */,
+				BE9E49A81EBB3919009B99F0 /* PhotoListVC.m in Sources */,
+				BE9E49951EBB15EA009B99F0 /* BaseVC.swift in Sources */,
+				BE5152D61EB31C62008AE248 /* CEReversibleAnimationController.m in Sources */,
+				BE9E498E1EBB1570009B99F0 /* PhotoDetailVC.m in Sources */,
+				BE5152EE1EB31ECA008AE248 /* LXFoldAnimatedTransition.m in Sources */,
+				BE5152D81EB31C62008AE248 /* CEHorizontalSwipeInteractionController.m in Sources */,
+				BE9E498B1EBB1562009B99F0 /* PhotoListVCC.m in Sources */,
+				BE5152EB1EB31CEE008AE248 /* LXBaseAnimatedTransition.m in Sources */,
+				BE5152D71EB31C62008AE248 /* CEBaseInteractionController.m in Sources */,
+				BE5152E81EB31C74008AE248 /* LXTabbarVC.m in Sources */,
+				BE9E49921EBB15C0009B99F0 /* ListVC.swift in Sources */,
+				BE5152D51EB31C62008AE248 /* CEFoldAnimationController.m in Sources */,
+				BE9E49991EBB2275009B99F0 /* Colours.m in Sources */,
+				BE5152E51EB31C74008AE248 /* DraggableView.m in Sources */,
+				BECD1CF61EB898DB00917B8C /* LXHorizontalSwipeInteractionTransition.m in Sources */,
+				BECD1CF31EB8980100917B8C /* LXBasePercentDrivenInteractiveTransition.m in Sources */,
+				BE51522C1EB196DE008AE248 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE5152331EB196DE008AE248 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE5152341EB196DE008AE248 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE5152381EB196DE008AE248 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE5152391EB196DE008AE248 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE51523C1EB196DE008AE248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE51523D1EB196DE008AE248 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE51523F1EB196DE008AE248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65AE3E349230C18C6761EDED /* Pods-LXCAAnimation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 2P9RYE8ECT;
+				INFOPLIST_FILE = LXCAAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.LXCAAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ex/List/LXCAAnimation-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BE5152401EB196DE008AE248 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E54E9C47F74725D15982B61 /* Pods-LXCAAnimation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 2P9RYE8ECT;
+				INFOPLIST_FILE = LXCAAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.LXCAAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ex/List/LXCAAnimation-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE5152221EB196DE008AE248 /* Build configuration list for PBXProject "LXCAAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE51523C1EB196DE008AE248 /* Debug */,
+				BE51523D1EB196DE008AE248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE51523E1EB196DE008AE248 /* Build configuration list for PBXNativeTarget "LXCAAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE51523F1EB196DE008AE248 /* Debug */,
+				BE5152401EB196DE008AE248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE51521F1EB196DE008AE248 /* Project object */;
+}

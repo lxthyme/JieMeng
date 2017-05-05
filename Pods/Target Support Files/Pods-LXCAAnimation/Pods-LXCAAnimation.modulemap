@@ -1,0 +1,6 @@
+framework module Pods_LXCAAnimation {
+  umbrella header "Pods-LXCAAnimation-umbrella.h"
+
+  export *
+  module * { export * }
+}
